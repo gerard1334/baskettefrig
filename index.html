@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIEG Basket 13</title>
+    <title>FRIG Basket Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,29 +66,42 @@
     <div class="gallery">
         <!-- Photo 1 -->
         <div class="gallery-item">
-<a href="https://ibb.co/f83qxN5"><img src="https://i.ibb.co/f83qxN5/t-l-charge.jpg" alt="t-l-charge" border="0" /></a>
+            <a href="https://ibb.co/f83qxN5"><img src="https://i.ibb.co/f83qxN5/t-l-charge.jpg" alt="t-l-charge" border="0" /></a>
             <button onclick="window.location.href='https://gerard1334.github.io/papillon/';">PAYEMENT</button>
         </div>
 
         <!-- Photo 2 -->
         <div class="gallery-item">
-<a href="https://ibb.co/6tFKXgQ"><img src="https://i.ibb.co/6tFKXgQ/t-l-c.jpg" alt="t-l-c" border="0" /></a>
+            <a href="https://ibb.co/6tFKXgQ"><img src="https://i.ibb.co/6tFKXgQ/t-l-c.jpg" alt="t-l-c" border="0" /></a>
             <button onclick="window.location.href='https://gerard1334.github.io/papillon/';">PAYEMENT </button>
         </div>
 
         <!-- Photo 3 -->
         <div class="gallery-item">
-          <a href="https://ibb.co/f83qxN5"><img src="https://i.ibb.co/f83qxN5/t-l-charge.jpg" alt="t-l-charge" border="0" /></a>
+            <a href="https://ibb.co/f83qxN5"><img src="https://i.ibb.co/f83qxN5/t-l-charge.jpg" alt="t-l-charge" border="0" /></a>
             <button onclick="window.location.href='https://gerard1334.github.io/papillon/';">PAYEMENT </button>
         </div>
 
         <!-- Photo 4 -->
         <div class="gallery-item">
-<a href="https://ibb.co/9sW8Cfm"><img src="https://i.ibb.co/9sW8Cfm/t-l-chargem.jpg" alt="t-l-chargem" border="0" /></a>
+            <a href="https://ibb.co/9sW8Cfm"><img src="https://i.ibb.co/9sW8Cfm/t-l-chargem.jpg" alt="t-l-chargem" border="0" /></a>
             <button onclick="window.location.href='https://gerard1334.github.io/papillon/';">PAYEMENT</button>
         </div>
-
     </div>
 
+    <script>
+        // Disable right-click globally
+        document.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+        });
+
+        // Allow right-click only on specific input fields
+        document.addEventListener('contextmenu', (event) => {
+            const allowedFields = ['INPUT', 'TEXTAREA']; // Allow right-click on input and textarea fields
+            if (allowedFields.includes(event.target.tagName)) {
+                event.stopPropagation(); // Allow default behavior
+            }
+        });
+    </script>
 </body>
 </html>
