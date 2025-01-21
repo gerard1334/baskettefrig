@@ -90,16 +90,11 @@
     </div>
 
     <script>
-        // Disable right-click globally
-        document.addEventListener('contextmenu', (event) => {
-            event.preventDefault();
-        });
-
-        // Allow right-click only on specific input fields
+        // Disable right-click globally except for input and textarea fields
         document.addEventListener('contextmenu', (event) => {
             const allowedFields = ['INPUT', 'TEXTAREA']; // Allow right-click on input and textarea fields
-            if (allowedFields.includes(event.target.tagName)) {
-                event.stopPropagation(); // Allow default behavior
+            if (!allowedFields.includes(event.target.tagName)) {
+                event.preventDefault();
             }
         });
     </script>
