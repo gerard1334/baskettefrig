@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .gallery-item button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .gallery-item button:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Basketball Gallery</h1>
+
+    <div class="gallery">
+        <!-- Photo 1 -->
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Basketball+1" alt="Basketball Image 1">
+            <button onclick="window.location.href='https://www.example.com/basketball1';">Go to Basketball Site 1</button>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Basketball+2" alt="Basketball Image 2">
+            <button onclick="window.location.href='https://www.example.com/basketball2';">Go to Basketball Site 2</button>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Basketball+3" alt="Basketball Image 3">
+            <button onclick="window.location.href='https://www.example.com/basketball3';">Go to Basketball Site 3</button>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Basketball+4" alt="Basketball Image 4">
+            <button onclick="window.location.href='https://www.example.com/basketball4';">Go to Basketball Site 4</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
